@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:baselineAligned="false"
+        android:clickable="false"
+        android:textAlignment="center">
+
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPedidoNome"
+            android:layout_weight="2"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:textSize="25sp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPedidoPreco"
+            android:layout_weight="1"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:textSize="25sp"
+            android:textStyle="normal|bold"
+            android:textAlignment="textEnd" />
+
+        <TextView
+            android:text="X"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:layout_weight="2"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="normal|bold"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

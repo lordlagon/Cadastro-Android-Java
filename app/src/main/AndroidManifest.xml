@@ -16,7 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Cardapio" />
-        <activity android:name=".Pagamento"></activity>
+        <activity android:name=".Confirmacao"></activity>
     </application>
 
 </manifest>

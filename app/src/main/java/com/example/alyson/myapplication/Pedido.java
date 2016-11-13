@@ -7,4 +7,6 @@ package com.example.alyson.myapplication;
 public class Pedido extends Produto {
 
     private int idPedido;
+
+
 }

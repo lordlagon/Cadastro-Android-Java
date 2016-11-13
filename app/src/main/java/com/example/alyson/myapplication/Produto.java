@@ -13,8 +13,7 @@ public class Produto implements Serializable {
     private int idProduto;
     private int capas;
     private String nome;
-    private double valor;
-    private String preco;
+    private Integer preco;
 
 
     public int getCapas() {
@@ -37,22 +36,12 @@ public class Produto implements Serializable {
     }
 
 
-    public double getValor() {
-        return valor;
-    }
-
-
-    public void setValor(double valor) {
-        this.valor = valor;
-    }
-
-
-    public String getPreco() {
+    public Integer getPreco() {
         return preco;
     }
 
 
-    public void setPreco(String preco) {
+    public void setPreco(Integer preco) {
         this.preco = preco;
     }
 

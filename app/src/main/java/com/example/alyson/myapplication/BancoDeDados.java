@@ -17,22 +17,22 @@ public class BancoDeDados extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String sql = "CREATE TABLE `produtos` (`id_produto`    INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,`nome_produto` TEXT NOT NULL, `preco` TEXT,`imagem`  TEXT)";
+        String sql = "CREATE TABLE `pedidos` (`id_produto` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,`nome_produto` TEXT NOT NULL, `preco` TEXT)";
         db.execSQL(sql);
     }
 
-          public void gravar(Produto produto){
+          public void gravar(Pedido pedido){
 
         ContentValues valores = new ContentValues();
-        valores.put("nome_produto", produto.getNome());
-        valores.put("preco", produto.getPreco());
+        valores.put("nome_produto", pedido.getNome());
+        valores.put("preco", pedido.getPreco());
 
 
        //Carrega o banco SQLite;
         SQLiteDatabase db = getWritableDatabase();
 
-        if (produto.getIdProduto() > 0){
-            String id = String.valueOf(produto.getIdProduto());
+        if (pedido.getIdProduto() > 0){
+            String id = String.valueOf(pedido.getIdProduto());
             db.update("produtos", valores, "id_produto=?", new String[]{id});
         } else {
             db.insert("produtos", null, valores);
