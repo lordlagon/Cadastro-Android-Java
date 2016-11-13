@@ -44,7 +44,8 @@ tools:context="com.example.alyson.myapplication.MainActivity"
         android:id="@+id/imageButton2"
         android:src="@drawable/pedidos"
         android:layout_gravity="center"
-        android:layout_weight="0.03" />
+        android:layout_weight="0.03"
+        android:onClick="pedidos" />
 
 
 </LinearLayout>

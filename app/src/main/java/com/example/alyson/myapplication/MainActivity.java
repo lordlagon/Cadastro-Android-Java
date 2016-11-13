@@ -21,6 +21,11 @@ import android.content.Intent;
             startActivity(vai);
         }
 
+        public void pedidos(View v) {
+            Intent vai = new Intent(this, PedidosFeitos.class);
+            startActivity(vai);
+        }
+
 
     }
 
