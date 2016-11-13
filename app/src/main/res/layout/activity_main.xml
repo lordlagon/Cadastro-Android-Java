@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context="com.example.alyson.myapplication.MainActivity"
+    android:background="@drawable/background"
+    android:weightSum="1">
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.39"></LinearLayout>
+
+
+    <ImageButton
+        android:layout_width="217dp"
+        android:layout_height="95dp"
+        android:id="@+id/imageButton"
+        android:src="@drawable/cardapio"
+        android:layout_gravity="center"
+        android:layout_weight="0.03"
+        android:background="@drawable/background"
+        android:onClick="cardapio" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.07"></LinearLayout>
+
+
+    <ImageButton
+        android:layout_width="217dp"
+        android:layout_height="95dp"
+        android:id="@+id/imageButton2"
+        android:src="@drawable/pedidos"
+        android:layout_gravity="center"
+        android:layout_weight="0.03" />
+
+
+</LinearLayout>
+
+
